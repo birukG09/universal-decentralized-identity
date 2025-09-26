@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 **DIDVault** is a secure, decentralized identity management platform that allows users to create, store, and manage their decentralized digital identities (DIDs) safely. Built using **Rust** for backend logic and **Solidity** for smart contract integration on blockchain networks, the app ensures user privacy, ownership, and verifiable identity credentials.
-![img alt]()
+![img alt](https://github.com/birukG09/universal-decentralized-identity/blob/e0554d6390101917e9cf9f8c04db88131088ae14/attached_assets/20250926_1809_DID%20Vault%20Logo%20Design_simple_compose_01k63911ksee69etc50n61cvfd.png)
 ![img alt](https://github.com/birukG09/universal-decentralized-identity/blob/029ab519d887c358b05977ca3c6dc4d007d1d84a/attached_assets/20250926_1628_Decentralized%20Identity%20Vault_simple_compose_01k6338s0xe189r2xkjzf4zed9_1758893624107.png)
 ---
 
