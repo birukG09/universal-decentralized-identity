@@ -1,0 +1,15 @@
+{
+  "name": "did-vault",
+  "version": "1.0.0",
+  "description": "Decentralized Identity Vault System",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\" \"npm run python-services\"",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "python-services": "cd python-services && python -m uvicorn main:app --host 0.0.0.0 --port 8001 --reload",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../python-services && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

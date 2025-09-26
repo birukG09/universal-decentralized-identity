@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base dark theme */
+@layer base {
+  html {
+    @apply bg-vault-dark text-gray-100;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-vault-dark text-gray-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    @apply font-medium;
+  }
+}
+
+@layer components {
+  /* Custom button styles */
+  .btn-vault {
+    @apply font-body font-medium rounded-vault px-6 py-3 transition-all duration-300 ease-out;
+    @apply hover:scale-105 active:scale-95;
+  }
+  
+  .btn-primary {
+    @apply btn-vault bg-vault-cyan text-vault-dark shadow-glow-cyan;
+    @apply hover:shadow-glow-cyan hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply btn-vault bg-vault-slate border border-vault-gray text-gray-100;
+    @apply hover:bg-vault-gray hover:shadow-glow-purple;
+  }
+  
+  /* Card styles */
+  .card-vault {
+    @apply bg-vault-slate border border-vault-gray rounded-vault p-6;
+    @apply transition-all duration-300 hover:border-vault-cyan hover:shadow-glow-cyan;
+  }
+  
+  /* Input styles */
+  .input-vault {
+    @apply bg-vault-slate border border-vault-gray rounded-vault px-4 py-3;
+    @apply text-gray-100 placeholder-gray-400 font-body;
+    @apply focus:border-vault-cyan focus:outline-none focus:shadow-glow-cyan;
+    @apply transition-all duration-300;
+  }
+  
+  /* Navigation tab styles */
+  .nav-tab {
+    @apply py-4 px-6 font-heading font-medium text-sm transition-all duration-300;
+    @apply border-b-2 border-transparent text-gray-400;
+    @apply hover:text-vault-cyan hover:border-vault-cyan;
+  }
+  
+  .nav-tab.active {
+    @apply border-vault-cyan text-vault-cyan shadow-glow-cyan;
+  }
+  
+  /* Glow animations */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+    }
+  }
+}
+
+@layer utilities {
+  /* Text gradients */
+  .text-gradient-vault {
+    background: linear-gradient(45deg, #38BDF8, #9333EA, #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Energy flow animation */
+  .animate-energy-flow {
+    animation: energyFlow 3s ease-in-out infinite;
+  }
+  
+  @keyframes energyFlow {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  @apply bg-vault-slate text-vault-cyan px-2 py-1 rounded text-sm;
+}
+
+/* Legacy icon support (will be replaced) */
+.app-icon {
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/images/did-vault-logo1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.home-logo {
+  width: 240px;
+  height: 240px;
+  background-image: url('/assets/images/did-vault-logo2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
