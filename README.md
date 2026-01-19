@@ -130,4 +130,4 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 **Author:** Biruk G  
 **GitHub:** [birukG09](https://github.com/birukG09)  
-**Email:** biruk@example.com  
+**Email:** birukgebre277@gmail.com  
